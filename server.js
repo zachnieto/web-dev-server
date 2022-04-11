@@ -7,7 +7,7 @@ import cors from 'cors';
 const app = express();
 
 app.use(cors({
-    origin: 'https://a9--znieto-webdev.netlify.app'
+    origin: '*'
 }));
 app.use(express.json());
 
