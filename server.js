@@ -6,7 +6,9 @@ import tuitController   from "./controllers/tuits-controller.js";
 import cors from 'cors';
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: 'https://a9--znieto-webdev.netlify.app'
+}));
 app.use(express.json());
 
 
